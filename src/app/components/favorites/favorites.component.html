@@ -1,0 +1,9 @@
+<div class="container"> <p>{{favoritesCount}}</p>
+<div    *ngFor="let joke of favoriteViewData ">
+    <p>{{joke.value}}</p>
+    <button (click)="deleteJoke(joke.id)">delete</button>
+    <button (click)="deleteLocalStorage()">delete all</button>
+    
+  </div>
+ 
+</div>

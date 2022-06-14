@@ -1,30 +1,9 @@
-<div class="container">
+<div>
   
-  <h1>Random jokes generator</h1>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  <ul>
-    <li><a routerLink="/home.component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li>
-    <li><a routerLink="/favorites.component" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a></li>
-  </ul>
-</nav>
+<app-navigation></app-navigation>
+
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
-<div  class="joke" >
-  <p>{{joke.value}}</p>
-  <button (click)="newJoke()">Next joke</button>
-  <button (click)="saveJoke()">Save joke</button>
-  <button (click)="showFavorites()">show</button>
-</div>
-
-<div class="container"   *ngFor="let joke of favoriteViewData ">
-  
-  <p>{{joke.value}}</p>
-  <button (click)="deleteJoke(joke.id)">delete</button>
-  <button (click)="deleteLocalStorage()">delete all</button>
-  
-</div>
-
 
 
 </div>
