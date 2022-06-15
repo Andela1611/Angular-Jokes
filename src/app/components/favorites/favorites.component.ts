@@ -9,7 +9,7 @@ export class FavoritesComponent implements OnInit {
   favorites: any = [];
   joke: any = {};
   favoriteViewData: any = [];
-  favoritesCount: string = '0 jokes saved!';
+  favoritesCount: string = 'No jokes saved yet!';
   constructor() {}
 
   ngOnInit() {
@@ -36,6 +36,7 @@ export class FavoritesComponent implements OnInit {
       (joke: any) => joke.id !== id
     );
     localStorage.setItem('favorites', JSON.stringify(this.favoriteViewData));
+    this.countFavorites();
   }
 
   deleteLocalStorage() {

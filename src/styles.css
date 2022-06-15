@@ -1,20 +1,81 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.Card {
+  margin: 20px;
+  padding: 1em;
+}
+.CardContent {
+  border: solid white 1px;
+  border-radius: 6px;
+  background-color: white;
+  opacity: 0.7;
+  margin: 5px;
+  padding: 16px;
+  font-size: 1.4em;
+  font-weight: 550;
+  text-align: center;
+  color: #440006;
+  font-family: "Times New Roman", Times, serif;
+}
+button {
+  color: white;
+  background-color: #00bfba;
+  font-size: 1.1em;
+  padding: 10px 26px;
+  border-radius: 6px;
+  border: solid #00bfba 1px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
 
-  .container {
-    max-width: 500px;
-    margin: 30px auto;
-    overflow: auto;
-    min-height: 300px;
-    border: 1px solid steelblue;
-    padding: 30px;
-    border-radius: 5px;
-  }
+.CardActions {
+  padding: 16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .joke {
-    border: 1px solid steelblue;
-    border-radius: 5px;
-  }
+.CardActions button {
+  margin: 3px;
+}
+.CardContentInline {
+  display: flex;
+  justify-content: space-between;
+  border: solid white 1px;
+  border-radius: 6px;
+  margin: 5px;
+  padding: 16px;
+  font-size: 1.4em;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+  color: #440006;
+  background-color: white;
+  opacity: 0.7;
+}
+.joke-count {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+  border: solid white 1px;
+  border-radius: 6px;
+  margin: 5px;
+  padding: 16px;
+}
+
+.badge {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #00bfba;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}

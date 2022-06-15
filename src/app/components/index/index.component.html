@@ -1,7 +1,9 @@
-
-
-<div  class="joke" >
-    <p>{{joke.value}}</p>
+<div class="Card">
+  <div class="CardContent">
+    <p>{{ joke.value }}</p>
+  </div>
+  <div class="CardActions">
     <button (click)="newJoke()">Next joke</button>
     <button (click)="saveJoke()">Save joke</button>
   </div>
+</div>
